@@ -26,11 +26,11 @@ const createBaseMarkup = countriesArray => {
 };
 
 const createSecondaryMarkup = ({ capital, population, languages }) => {
-  return `<div>
+  return `<li>
     <p>Capital: ${capital}</p>
     <p>Population: ${population}</p>
     <p>Languages: ${Object.values(languages).join(', ')}</p>
-  </div>`;
+  </li>`;
 };
 
 const render = markup => {
