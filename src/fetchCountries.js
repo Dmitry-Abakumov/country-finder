@@ -5,7 +5,7 @@ import 'toastr/build/toastr.min.css';
 
 export const fetchCountries = name => {
   const BASE_URL = 'https://restcountries.com/v3.1/name/';
-  FIELDS = `name,capital,population,flags,languages`;
+  const FIELDS = `name,capital,population,flags,languages`;
 
   return fetch(`${BASE_URL}${name}?fields=${FIELDS}`)
     .then(response => {
