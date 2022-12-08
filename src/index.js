@@ -41,24 +41,47 @@ const reset = () => {
   refs.countriesList.innerHTML = '';
 };
 
-const onInputText = e => {
-  const value = e.target.value;
+const onInputText = async e => {
+  const { value } = e.target;
   if (!value) return reset();
 
-  fetchCountries(trim(value)).then(value => {
-    if (value.length > 9)
+  try {
+    const countries = await fetchCountries(trim(value));
+    if (countries.length > 9)
       return toastr.warning(
         'Too many matches found. Please enter a more specific name.'
       );
 
     reset();
 
-    if (value.length === 1) {
-      render(createSecondaryMarkup(value[0]));
+    if (countries.length === 1) {
+      render(createSecondaryMarkup(countries[0]));
     }
 
-    render(createBaseMarkup(value));
-  });
+    render(createBaseMarkup(countries));
+  } catch {
+    toastr.error('Oops, there is no country with that name');
+  }
 };
+
+// const onInputText = e => {
+//   const value = e.target.value;
+//   if (!value) return reset();
+
+//   fetchCountries(trim(value)).then(value => {
+//     if (value.length > 9)
+//       return toastr.warning(
+//         'Too many matches found. Please enter a more specific name.'
+//       );
+
+//     reset();
+
+//     if (value.length === 1) {
+//       render(createSecondaryMarkup(value[0]));
+//     }
+
+//     render(createBaseMarkup(value));
+//   });
+// };
 
 refs.input.addEventListener('input', debounce(onInputText, DEBOUNCE_DELAY));
