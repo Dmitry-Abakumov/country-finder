@@ -54,6 +54,19 @@ p {
   justify-content: center;
   align-items: center;
   gap: 5px;
+
+  width: 350px;
+}
+
+.country-info-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 15px;
+  border: 1px solod #000;
+  border-radius: 10px;
 }
 
 p {

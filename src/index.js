@@ -26,7 +26,7 @@ const createBaseMarkup = countriesArray => {
 };
 
 const createSecondaryMarkup = ({ capital, population, languages }) => {
-  return `<li>
+  return `<li class="country-info-wrap">
     <p>Capital: ${capital}</p>
     <p>Population: ${population}</p>
     <p>Languages: ${Object.values(languages).join(', ')}</p>
