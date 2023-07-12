@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -35,7 +37,7 @@ p {
   display: block;
   font: inherit;
   height: 40px;
-  max-width: 350px;
+  width: 350px;
   padding-left: 40px;
   margin: 0px auto 15px;
   border-radius: 10px;
@@ -67,6 +69,8 @@ p {
   padding: 10px 15px;
   border: 1px solod #000;
   border-radius: 10px;
+
+  width: 350px;
 }
 
 p {
