@@ -12,23 +12,7 @@ body {
   line-height: 1.5;
 }
 
-#search-box {
-  display: flex;
-  align-self: center;
-
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
-}
-
 ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -42,4 +26,22 @@ li {
 
 p {
   margin-left: 5px;
+}
+
+#search-box {
+  display: flex;
+  align-self: center;
+
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  margin-bottom: 16px;
+}
+
+.country-finder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
