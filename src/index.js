@@ -17,7 +17,7 @@ const createBaseMarkup = countriesArray => {
   return countriesArray
     .map(
       ({ flags, name }) => `
-  <li>
+  <li class="country-list-item">
     <img src=${flags.svg} alt="flag" width="40">
     <p>${name.official}</p>
   </li>`
