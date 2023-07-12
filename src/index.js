@@ -64,24 +64,4 @@ const onInputText = async e => {
   }
 };
 
-// const onInputText = e => {
-//   const value = e.target.value;
-//   if (!value) return reset();
-
-//   fetchCountries(trim(value)).then(value => {
-//     if (value.length > 9)
-//       return toastr.warning(
-//         'Too many matches found. Please enter a more specific name.'
-//       );
-
-//     reset();
-
-//     if (value.length === 1) {
-//       render(createSecondaryMarkup(value[0]));
-//     }
-
-//     render(createBaseMarkup(value));
-//   });
-// };
-
 refs.input.addEventListener('input', debounce(onInputText, DEBOUNCE_DELAY));
