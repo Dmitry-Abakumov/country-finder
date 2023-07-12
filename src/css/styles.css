@@ -13,6 +13,9 @@ body {
 }
 
 #search-box {
+  display: flex;
+  align-self: center;
+
   font: inherit;
   padding: 8px;
   max-width: 320px;
@@ -20,7 +23,15 @@ body {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
@@ -32,5 +43,3 @@ li {
 p {
   margin-left: 5px;
 }
-
-
