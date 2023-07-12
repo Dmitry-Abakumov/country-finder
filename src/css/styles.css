@@ -40,6 +40,7 @@ p {
   width: 350px;
   padding-left: 40px;
   margin: 0px auto 15px;
+  border: 1px solid #000;
   border-radius: 10px;
 }
 
