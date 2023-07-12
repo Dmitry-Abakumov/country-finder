@@ -22,6 +22,9 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
 
 p {
@@ -31,9 +34,11 @@ p {
 #search-box {
   display: block;
   font: inherit;
-  padding: 8px;
-  max-width: 320px;
+  height: 40px;
+  max-width: 350px;
+  padding-left: 40px;
   margin: 0px auto 15px;
+  border-radius: 10px;
 }
 
 .country-list {
