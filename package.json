@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Dmitry-Abakumov/fetch-countries",
+  "homepage": "https://github.com/Dmitry-Abakumov/country-finder",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /fetch-countries/"
+    "build": "parcel build src/*.html --public-url /country-finder/"
   },
   "repository": {
     "type": "git",
