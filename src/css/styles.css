@@ -29,13 +29,11 @@ p {
 }
 
 #search-box {
-  display: flex;
-  align-self: center;
-
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin: 0px auto;
 }
 
 .country-list {
